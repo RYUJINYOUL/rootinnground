@@ -1,5 +1,5 @@
 import React from 'react'
-import Header2 from '@/components/Header2'
+import Header2 from '@/components/template/Header2'
 
 
 const layout = ({ children }) => {

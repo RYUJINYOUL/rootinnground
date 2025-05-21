@@ -56,9 +56,6 @@ export default function Menu(props) {
      if(pathname === "/") {
       setHomeCategory("홈");
     } 
-     if (pathname === "/dastory") {
-      setHomeCategory("이용안내");
-    }  
      if (pathname === "/dastory/pro") {
       setHomeCategory("시설안내");
       setHomeCategory2("시설안내");
@@ -80,6 +77,14 @@ export default function Menu(props) {
       setHomeCategory("시설안내");
       setHomeCategory2("방-Type A");
     } 
+     if (pathname === "/dastory/gyu") {
+      setHomeCategory("시설안내");
+      setHomeCategory2("방-Type C");
+    }  
+     if (pathname === "/dastory/gong") {
+      setHomeCategory("시설안내");
+      setHomeCategory2("공용시설");
+     }
 
 
     slideRight()
@@ -91,20 +96,34 @@ export default function Menu(props) {
 
 const slideRight = () => {
   var slider = document.getElementById('nav');
-    console.log(headerImageSrc)
-  // console.log(slider.scrollWidth)
-  // if (headerImageSrc === "/dastory") {
-  //   slider.scroll(100, 200)
+  var slider2 = document.getElementById('nav2');
+
+  // if (headerImageSrc === "/dastory/pro") {
+  //   slider.scroll(200, 400)
   // }
   if (headerImageSrc === "/ta") {
     slider.scroll(200, 400)
   }
-  if (headerImageSrc === "/qu") {
-    slider.scroll(300, 500)
+  if (headerImageSrc === "/so") {
+    slider.scroll(250, 500)
   }
   if (headerImageSrc === "/map") {
-    slider.scroll(500, 600)
+    slider.scroll(300, 600)
   }
+
+  if (pathname === "/dastory/reser") {
+    slider2.scroll(0, 100)
+  }
+  if (pathname === "/dastory/jun") {
+    slider2.scroll(50, 100)
+  }
+  if (pathname === "/dastory/gyu") {
+     slider2.scroll(100, 200)
+  }
+  if (pathname === "/dastory/gong") {
+     slider2.scroll(150, 400)
+  }
+
 };
   
   return (

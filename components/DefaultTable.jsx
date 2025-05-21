@@ -12,7 +12,7 @@ export default function DefaultTable({props}) {
   const db2 = getFirestore(app);
   const [message, setMessages] = useState([]);
   const { push } = useRouter();
-  const timeFromNow = timestamp => moment(timestamp).format('YYYY-DD-MM');
+  const timeFromNow = timestamp => moment(timestamp).format('YYYY-MM-DD');
 
 
   useEffect(() => {
@@ -48,7 +48,7 @@ export default function DefaultTable({props}) {
 
 
   const onClickCard = ({ title, name, description, date }) => {
-    push(`/ta/playlist?title=${title}&name=${name}&des=${description}&date=${createdDate}`);
+    push(`/ta/playlist?title=${title}&name=${name}&des=${description}&date=${date}`);
     // push(`/test/?name=${id}collection=${collection}`);
   };
 

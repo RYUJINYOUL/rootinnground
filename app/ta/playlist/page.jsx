@@ -2,7 +2,7 @@
 // import app from '../../firebase.js';
 import React from 'react'
 import Image from "next/image";
-import Footer from '@/components/Footer'
+import Footer from '@/components/template/Footer'
 import PlayListCarousel4 from '@/components/PlayListCarousel4'
 
 // import PlayListCarousel4 from '@/components/PlayListCarousel4';

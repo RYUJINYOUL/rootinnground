@@ -1,43 +1,33 @@
 "use client"
 import React, { useState } from 'react'
-import Image from "next/image";
-import { HiPhone } from "react-icons/hi2";
-import { useRouter } from 'next/navigation'
-import { cn } from "@/lib/utils";
-import Footer from '@/components/Footer';
-import Mapping from '@/components/Mapping';
-import useUIState from "@/hooks/useUIState";
+
 import Gallery from '@/components/Gallery';
 
 const page = () => {
     let slides = [
-   "/Image/mosazzlRst.jpeg", 
-    "/Image/mosazV1S1U.jpeg", 
-    "/Image/mosaZppelt.jpeg", 
-    "/Image/mosazD0onx.jpeg", 
-    "/Image/mosaXzIaZ6.jpeg", 
-    "/Image/mosaYkiage.jpeg", 
-    "/Image/mosawJnOJr.jpeg", 
-    "/Image/mosau658pi.jpeg", 
-    "/Image/mosaUg4MYi.jpeg", 
-    "/Image/mosatpNBJw.jpeg", 
-    "/Image/mosapTi9lG.jpeg", 
-    "/Image/mosap47im9.jpeg", 
-    "/Image/mosao63LFE.jpeg", 
-    "/Image/mosajs9fUJ.jpeg", 
-    "/Image/mosaIYUwQ9.jpeg", 
-    "/Image/mosaiMoiDM.jpeg", 
-    "/Image/mosad2oAnf.jpeg", 
-    "/Image/mosa37JnzD.jpeg", 
-    "/Image/mosa8DNMqr.jpeg", 
-    "/Image/mosa0tPNd1.jpeg", 
-    "/Image/mosa0Dia0d.jpeg", 
-    "/Image/mainmiddle.jpeg", 
-    "/Image/main4.jpeg", 
-    "/Image/main3.jpeg", 
-    "/Image/main2.jpeg", 
-    "/Image/main1.jpeg", 
-    "/Image/main.jpeg",
+   "/Image/mosa7rrOEN.jpeg", 
+   "/Image/mosa78lcjv-f48b9633b3362.jpeg", 
+   "/Image/mosa78lcjv.jpeg", 
+   "/Image/mosaAzsUcM.jpeg", 
+   "/Image/mosaAzsUcM.webp", 
+   "/Image/mosaCrGvkU.jpeg", 
+   "/Image/mosaDgsemg.jpeg", 
+   "/Image/mosaemjEGm.jpeg", 
+   "/Image/mosagfLoVy.jpeg", 
+   "/Image/mosaIBv3Bl.jpeg", 
+   "/Image/mosaJ6YUEo.jpeg", 
+   "/Image/mosaJudA3J.jpeg", 
+   "/Image/mosalmQYXL.jpeg", 
+   "/Image/mosaNJN0GY.jpeg", 
+   "/Image/mosaq5QoSU.jpeg", 
+   "/Image/mosarbxJpn.jpeg", 
+   "/Image/mosas71RrT-6c69ffd5100ca8.jpeg", 
+   "/Image/mosas71RrT.jpeg", 
+   "/Image/mosas71RrT.webp", 
+   "/Image/mosatY8JnC.jpeg", 
+   "/Image/mosaUNecoI.jpeg", 
+   "/Image/mosaWtjeTu.jpeg", 
+   "/Image/mosaXtR3BL.jpeg",
    ]
  
 

@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from "next/image";
-import Footer from '@/components/Footer'
+import Footer from '@/components/template/Footer'
 
 function page (){
   return (
+    <div>
     <div className='md:my-20 my-25 p-3.5'>
       <section className='flex flex-col justify-center items-center'>
       <div className='lg:mt-13' />
@@ -39,8 +40,7 @@ function page (){
 
       </section>
       
-       
-       <div className='h-[150px]'/>
+       </div>
          <Footer />
        </div>
        

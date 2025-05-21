@@ -1,10 +1,10 @@
 "use client"
 import React, { useEffect, useState, useRef } from 'react'
-import Logo from './elements/Logo'
+import Logo from '../elements/Logo'
 import Menu from '@/components/Menu'
 import Menu2 from '@/components/Menu2'
-import Navigator from './elements/Navigator'
-import PagePadding from './PagePadding'
+import Navigator from '../elements/Navigator'
+import PagePadding from '../PagePadding'
 import useUIState from "@/hooks/useUIState";
 import Gallery from '@/components/Gallery3'
 import { usePathname } from 'next/navigation'
