@@ -100,7 +100,7 @@ const Header2 = ({children}) => {
           <Menu2 total={true} />
      </article>
      <div className='mt-2.5' />
-      <hr className="border-1 bg-neutral-100 opacity-100 dark:opacity-50 md:w-full w-[1100px]"/>
+      <hr className="border-1 bg-neutral-100 opacity-100 dark:opacity-50"/>
      </div>
     </div>
    </div>
