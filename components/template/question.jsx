@@ -5,9 +5,6 @@ import Image from "next/image";
 import useUIState from "@/hooks/useUIState";
 
 
-
-
-
 const Question = () => {
        const { push } = useRouter();
        const [ widths, setWidths ] = useState(false);
@@ -44,6 +41,8 @@ const Question = () => {
        </div>
        </div>
        </div>
+
+       <div className='md:w-[1100px] w-full md:px-0 px-3 flex flex-row justify-center items-start md:gap-7 gap-1 rounded-md' onClick={() => {onClickCategory("자주묻는질문" ,"/so")}}>
            {/* pc */}
            <section className='md:block hidden flex flex-col justify-center items-center'>
                 <div className='md:w-[1100px] w-full flex flex-col'>
@@ -107,7 +106,10 @@ const Question = () => {
                 </div>
                    
              </section>
+             </div>
            {/* 모바일 */}
+
+
              <div className='mt-7' />
               <div className='flex flex-col md:w-[530px] w-full px-3'>
                 <div className='md:hidden flex flex-col h-[40px] justify-end'>

@@ -91,7 +91,7 @@ return (
        <div className='md:h-[150px]' />
 
     {/* ---질문--- */}  
-       {/* <Question /> */}
+       <Question />
      {/* ---질문 끝--- */}  
 
 
