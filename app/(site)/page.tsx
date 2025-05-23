@@ -1,8 +1,8 @@
 "use client"
 import React, { useState } from 'react'
-import Image from "next/image";
-import { HiPhone } from "react-icons/hi2";
-import { useRouter } from 'next/navigation'
+// import Image from "next/image";
+// import { HiPhone } from "react-icons/hi2";
+// import { useRouter } from 'next/navigation'
 import Notice from '@/components/template/notice'
 import Sisul from '@/components/template/sisul'
 import ImageGallery from '@/components/template/imageGallery'
@@ -10,24 +10,24 @@ import Question from '@/components/template/question'
 import SisulNotice from '@/components/template/SisulNotice'
 import Footer from '@/components/template/Footer';
 import Mapping from '@/components/template/Mapping';
-import useUIState from "@/hooks/useUIState";
+// import useUIState from "@/hooks/useUIState";
 
 const page = () => {
-   const { push } = useRouter();
-   const [ widths, setWidths ] = useState(false);
-   const { homeCategory, setHomeCategory, setHeaderImageSrc } = useUIState();
+  //  const { push } = useRouter();
+  //  const [ widths, setWidths ] = useState(false);
+  //  const { homeCategory, setHomeCategory, setHeaderImageSrc } = useUIState();
  
 
-   const onClickCategory = (item:any ,src:any) => {
-    if (homeCategory === item) {
-      setHeaderImageSrc("");
-      setHomeCategory(item);
-    } else {
-      setHeaderImageSrc(src);
-      setHomeCategory(item);
-      push(src)
-    }
-  };
+  //  const onClickCategory = (item:any ,src:any) => {
+  //   if (homeCategory === item) {
+  //     setHeaderImageSrc("");
+  //     setHomeCategory(item);
+  //   } else {
+  //     setHeaderImageSrc(src);
+  //     setHomeCategory(item);
+  //     push(src)
+  //   }
+  // };
 
 return (
      
@@ -58,7 +58,7 @@ return (
  
 
    {/* ---모바일 갤러리 사진링크 열기 닫기--- */}
-       <Sisul />
+       {/* <Sisul /> */}
     {/* ---end--- */}
 
 
@@ -77,7 +77,7 @@ return (
 
    
     {/* ---시설안내 start--- */}
-       <SisulNotice />
+       {/* <SisulNotice /> */}
     {/* ---end--- */}  
 
 
@@ -91,7 +91,7 @@ return (
        <div className='md:h-[150px]' />
 
     {/* ---질문--- */}  
-       <Question />
+       {/* <Question /> */}
      {/* ---질문 끝--- */}  
 
 

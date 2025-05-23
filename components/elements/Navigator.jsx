@@ -6,12 +6,19 @@ import React, { useMemo } from 'react'
 import { FaHeart } from "react-icons/fa";
 import useUIState from "@/hooks/useUIState";
 import { cn } from "@/lib/utils"
+import { getAuth, signOut } from 'firebase/auth';
+import app from '../../firebase';
+import { useSelector } from 'react-redux';
+import { useDispatch } from "react-redux";
 import { AiTwotoneNotification } from "react-icons/ai";
 import { BsChatText } from "react-icons/bs";
 
 function Navigator() {
     const { push } = useRouter();
     const pathname = usePathname()
+    const dispatch = useDispatch();
+    const auth = getAuth(app);
+    const { currentUser, clearUser } = useSelector(state => state.user)
     const { homeCategory, setHomeCategory, setHeaderImageSrc } = useUIState();
     const homeCategoryList = [
       {
@@ -45,14 +52,30 @@ function Navigator() {
         console.log(item.label)
       }
     };
+
+      const handleLogin = () => {
+       push("/login", {scroll: false}) 
+    }
+
+     const handleLogout = () => {
+      signOut(auth).then(() => {
+        dispatch(clearUser());
+      }).catch((err) => {})
+      push("/login", {scroll: false})
+    }
   
 
   return (
     <div>
       <section className='flex flex-row pl-7 pt-4 pb-4 gap-5'>
         <div className='text-[14px] text-white items-center hover:text-[#f9f9f8]'
-        onClick={() => {push("/login", {scroll: false})}}
-        >로그인</div>
+        onClick={
+          (currentUser.uid === undefined) 
+          ? handleLogin
+          : 
+          handleLogout
+        }
+        >{(currentUser.uid === undefined) ? "로그인" : "로그아웃"}</div>
         <div className='text-[14px] text-white items-center'>|</div>
         <div className='text-[14px] text-white items-center hover:text-[#f9f9f8]'
         onClick={() => {push("/register", {scroll: false})}}

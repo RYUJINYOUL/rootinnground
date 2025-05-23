@@ -29,6 +29,7 @@ const review = () => {
         "name": currentUser.name ?? "익명",
         "description": data.description,
         "url": image,
+        "password":data.password ?? "",
         "title": data.title,
         "phoneNumber": currentUser.phoneNumber ?? "0",
         "userKey": currentUser.uid ?? "",
@@ -204,6 +205,14 @@ const review = () => {
                   placeholder="제목"
                   {...register("title")}
                 />
+             <div className='mt-5'/>
+             <input
+                  className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
+                  type="password" 
+                  name="password"
+                  placeholder="비밀번호설정"
+                  {...register("password")}
+                />   
              <div className='mt-5'/>
             
               <textarea

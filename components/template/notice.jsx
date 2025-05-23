@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import { getFirestore, collection, where, setDoc, onSnapshot, query} from "firebase/firestore";
+import { getFirestore, collection, where, setDoc, onSnapshot, query, limit} from "firebase/firestore";
 import app from '../../firebase';
 import moment from 'moment';
 import useUIState from "@/hooks/useUIState";
@@ -10,7 +10,7 @@ const Notice = () => {
   const db2 = getFirestore(app);
   const [message, setMessages] = useState([]);
   const { push } = useRouter();
-  const timeFromNow = timestamp => moment(timestamp).format('YYYY-MM-DD');
+  const timeFromNow = timestamp => moment(timestamp).format('YYYY.MM.DD');
   const { homeCategory, setHomeCategory, setHeaderImageSrc } = useUIState();
 
 
@@ -27,10 +27,10 @@ const Notice = () => {
   }, [])
 
 
-//   , orderBy('createdDate', 'desc')
+//   , orderBy('createdDate', 'desc'), limit(3)
   const addMessagesListener = async () => {
 
-    const tweetsQuery = query(collection(db2, "reviews"))
+    const tweetsQuery = query(collection(db2, "reviews"), limit(3))
 
       await onSnapshot(tweetsQuery, (snapshot) => { // <---- 
         const tweetList = snapshot.docs.map((doc) => {
@@ -86,26 +86,27 @@ const Notice = () => {
       
        <div className='md:mt-7'/>
         
-        <div> {message.map(({ title, name, description, date }, index) => {
+        <div className='flex md:flex-row flex-col md:w-[1100px] w-full'> 
+          
+          {message.map(({ title, name, description, date }, index) => {
       
- 
-    
          return (
-            <div className="p-5 md:w-[1100px] w-full flex md:flex-row flex-col md:justify-between justify-center md:items-center items-start md:gap-7 gap-1">
+            <div key={index} className="p-5 md:w-[1100px] w-full flex flex-row">
               
-              <div key={index} className='md:[1100px] w-[330px]' onClick={()=> onClickCard({ title, name, description, date })}>
-                <span className="text-[#222222] font-semibold text-[16px]">
-                  {title}
-                  </span>
-                <div className='mt-3 md:block hidden md:[1100px] w-full'/>
-                 <div className='mt-3 md:block hidden md:[1100px] w-full'/>
-                  <span className="text-[#666666] text-[13px]">{name}&nbsp;|&nbsp;</span>
-                  <span className="text-[#AAAAAA] text-[13px]">{timeFromNow(date)}</span>
-              </div>
-            </div>
-            );
-          })}
+              <div key={index} className='w-[330px] flex flex-col md:justify-between justify-center items-start md:gap-7 gap-1'
+               onClick={()=> onClickCard({ title, name, description, date })}>
+                
+                <div className="text-[#222222] font-semibold text-[16px]">{title}</div>
+                <div className="text-[#666666] text-[13px]">{description}</div>
+                <div className='mt-3 flex flex-row w-[300px] items-start justify-start'>
+                  <div className="text-[#666666] text-[13px]">{name}&nbsp;|&nbsp;</div>
+                  <div className="text-[#AAAAAA] text-[13px]">{timeFromNow(date)}</div>
+               </div>
+             </div>
+           </div>
+           )})}
         </div>
+
 
           <div className='flex flex-col'>
        </div>

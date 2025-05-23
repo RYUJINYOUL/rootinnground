@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import moment from 'moment';
 import { Card, Typography } from "@material-tailwind/react";
 import { useRouter } from "next/navigation";
+import { useDispatch, useSelector } from 'react-redux';
 import { getFirestore, collection, where, setDoc, onSnapshot, query} from "firebase/firestore";
 import app from '../firebase.js';
 
@@ -12,7 +13,8 @@ export default function DefaultTable({props}) {
   const db2 = getFirestore(app);
   const [message, setMessages] = useState([]);
   const { push } = useRouter();
-  const timeFromNow = timestamp => moment(timestamp).format('YYYY-MM-DD');
+  const { currentUser } = useSelector(state => state.user)
+  const timeFromNow = timestamp => moment(timestamp).format('YYYY.MM.DD');
 
 
   useEffect(() => {
@@ -32,13 +34,13 @@ export default function DefaultTable({props}) {
       await onSnapshot(tweetsQuery, (snapshot) => { // <---- 
         const tweetList = snapshot.docs.map((doc) => {
           const { name, description, url, 
-            title, phoneNumber, createdDate, NumOfLikes, userKey,
+            title, phoneNumber, createdDate, NumOfLikes, userKey, password
           } = doc.data();
           const id = doc.id
           const date = doc.data().createdDate.toDate();
           return {
-            name, description, url, 
-            title, phoneNumber, date, NumOfLikes, userKey,
+            name, description, url, id,
+            title, phoneNumber, date, NumOfLikes, userKey, password
           };
         });
           setMessages(tweetList);
@@ -47,8 +49,25 @@ export default function DefaultTable({props}) {
 
 
 
-  const onClickCard = ({ title, name, description, date }) => {
-    push(`/ta/playlist?title=${title}&name=${name}&des=${description}&date=${date}`);
+
+
+
+  const onClickCard = ({ title, name, description, date, id, password }) => {
+      var enteredName=""
+      if (currentUser.uid === "aRWcjBBQoHXE4qtZDJWzZ5P8hBE2" || password === "") {
+        push(`/ta/playlist?id=${id}&title=${title}&name=${name}&des=${description}&date=${date}`)
+      } else if (enteredName = prompt('비밀번호를 입력해주세요')) {
+           if(enteredName === "12"){
+               alert("방문해주셔서 감사합니다.")
+              push(`/ta/playlist?id=${id}&title=${title}&name=${name}&des=${description}&date=${date}`)
+           } else {
+          alert("비밀번호가    fdfs틀립니다.")
+          push("/ta");
+           }      
+      } else {
+          alert("비밀번호가 틀립니다.")
+          push("/ta");
+      }
     // push(`/test/?name=${id}collection=${collection}`);
   };
 
@@ -77,7 +96,7 @@ export default function DefaultTable({props}) {
           </tr>
         </thead>
         <tbody>
-          {message.map(({ title, name, description, date }, index) => {
+          {message.map(({ title, name, description, date, id, password }, index) => {
             const isLast = index === props[1].length - 1;
             const classes = isLast ? "p-4" : "p-4 border-b border-blue-gray-50";
  
@@ -87,7 +106,7 @@ export default function DefaultTable({props}) {
                   <Typography
                     variant="small"
                     color="blue-gray"
-                    className="font-normal w-[20px]"
+                    className="font-normal truncate w-[20px]"
                   >
                     {index + 1}
                   </Typography>
@@ -96,8 +115,8 @@ export default function DefaultTable({props}) {
                   <Typography
                     variant="small"
                     color="blue-gray"
-                    className="font-normal md:w-[500px] w-[150px] line-clamp-1 text-ellipsis"
-                    onClick={()=>onClickCard({ title, name, description, date })}
+                    className="font-normal truncate md:w-[500px] w-[80px] line-clamp-1"
+                    onClick={()=>onClickCard({ title, name, description, date, id, password })}
                   >
                     {title}
                   </Typography>

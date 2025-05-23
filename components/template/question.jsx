@@ -52,8 +52,8 @@ const Question = () => {
                   <div className='flex flex-row gap-30'>
                     <div className='flex flex-col gap-1.5 lg:text-start text-center text-[15px]'>
                   
-                    <div className='text-[#4a5937] text-[20px]'>현재 진행중인 할인 이벤트가 있나요?</div>
-                    <div className='text-[#999999] text-[15px]'>리뉴얼기념, 첫 달 15만원 이벤트 진행중입니다!</div>
+                    <div className='text-[#4a5937] truncate text-[20px]'>현재 진행중인 할인 이벤트가 있나요?</div>
+                    <div className='text-[#999999] truncate text-[15px]'>리뉴얼기념, 첫 달 15만원 이벤트 진행중입니다!</div>
                   </div>
                    
                  
@@ -69,8 +69,8 @@ const Question = () => {
                     <div className='flex flex-row gap-1.5 lg:text-start text-center text-[15px]'>
                   <div className='flex flex-col gap-1.5 lg:text-start text-center text-[15px]'>
                   
-                    <div className='text-[#4a5937 text-[20px]'>현재 입주가능한 방이 있나요?</div>
-                    <div className='text-[#333333] text-[15px]'>현재 입주가능한 방 목록은 전화주시거나 홈페이지에 입실문의를 남겨주시면 자세하게 안내해드리고 있습니다.</div>
+                    <div className='text-[#4a5937 truncate text-[20px]'>현재 입주가능한 방이 있나요?</div>
+                    <div className='text-[#333333] truncate text-[15px]'>현재 입주가능한 방 목록은 전화주시거나 홈페이지에 입실문의를 남겨주시면 자세하게 안내해드리고 있습니다.</div>
                   </div>
                     </div>
                   </div>  
@@ -84,25 +84,25 @@ const Question = () => {
            {/* 모바일 */}
             <section className='md:hidden block w-full'>
                 <div className='w-full flex flex-col px-5'>
-                    <div className='text-[#333333] text-[17px]'>현재 진행중인 할인 이벤트가 있나요?</div>
+                    <div className='text-[#333333] truncate text-[17px]'>현재 진행중인 할인 이벤트가 있나요?</div>
                     <div className='mt-1' />
-                    <div className='text-[#999999] text-[16px]'>리뉴얼기념, 첫 달 15만원 이벤트 진행중입니다!</div>
+                    <div className='text-[#999999] truncate text-[16px]'>리뉴얼기념, 첫 달 15만원 이벤트 진행중입니다!</div>
                     <div className='mt-3' />
-                    <div className='text-[#333333] text-[17px]'>현재 입주가능한 방이 있나요?</div>
+                    <div className='text-[#333333] truncate text-[17px]'>현재 입주가능한 방이 있나요?</div>
                     <div className='mt-1' />
-                    <div className='text-[#999999] text-[16px]'>현재 입주가능한 방 목록은 전화주시거나 홈페이지에 …</div>
+                    <div className='text-[#999999] truncate text-[16px]'>현재 입주가능한 방 목록은 전화주시거나 홈페이지에 …</div>
                     <div className='mt-3' />
-                    <div className='text-[#333333] text-[17px]'>방 가격이 어떻게 되나요?</div>
+                    <div className='text-[#333333] truncate text-[17px]'>방 가격이 어떻게 되나요?</div>
                     <div className='mt-1' />
-                    <div className='text-[#999999] text-[16px]'>루틴그라운드의 방은 총 세 가지 타입으로 되어있으며…</div>
+                    <div className='text-[#999999] truncate text-[16px]'>루틴그라운드의 방은 총 세 가지 타입으로 되어있으며…</div>
                     <div className='mt-3' />
-                    <div className='text-[#333333] text-[17px]'>방을 실제로 보고싶어요.</div>
+                    <div className='text-[#333333] truncate text-[17px]'>방을 실제로 보고싶어요.</div>
                     <div className='mt-1' />
-                    <div className='text-[#999999] text-[16px]'>루틴그라운드는 현재 네이버 예약으로 방문투어 예약…</div>
+                    <div className='text-[#999999] truncate text-[16px]'>루틴그라운드는 현재 네이버 예약으로 방문투어 예약…</div>
                     <div className='mt-3' />
-                    <div className='text-[#333333] text-[17px]'>위치가 어떻게 되나요?</div>
+                    <div className='text-[#333333] truncate text-[17px]'>위치가 어떻게 되나요?</div>
                     <div className='mt-1' />
-                    <div className='text-[#999999] text-[16px]'>루틴그라운드는 구룡역 도보 5분에 위치해 강남권과 …</div>
+                    <div className='text-[#999999] truncate text-[16px]'>루틴그라운드는 구룡역 도보 5분에 위치해 강남권과 …</div>
 
                 </div>
                    
