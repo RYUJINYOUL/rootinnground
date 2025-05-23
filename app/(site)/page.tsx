@@ -58,7 +58,7 @@ return (
  
 
    {/* ---모바일 갤러리 사진링크 열기 닫기--- */}
-       {/* <Sisul /> */}
+       <Sisul />
     {/* ---end--- */}
 
 
@@ -77,7 +77,7 @@ return (
 
    
     {/* ---시설안내 start--- */}
-       {/* <SisulNotice /> */}
+       <SisulNotice />
     {/* ---end--- */}  
 
 
