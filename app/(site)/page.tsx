@@ -124,20 +124,9 @@ return (
       <Notice />
     {/* 입실문의 끝 */}
 
-    <div className='md:mt-0 mt-4' />
-    <section className='md:hidden block'>
-        <div className='md:mb-18 mb-1'></div>
-          <hr className="h-2.5 border-t-0 bg-neutral-200 opacity-100 dark:opacity-50 md:w-[1000px] w-screen"/>
-      </section>    
-
-
-
-
+    
     <div className='md:h-[100px]' />
-    <div className='md:mb-0 mb-4'></div>
-
-
-      
+  
       {/* 이미지 갤러리 시작 */}
          <ImageGallery />
       {/* 이미지 갤러리 끝 */}
