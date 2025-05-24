@@ -32,7 +32,7 @@ const Mapping = () => {
 
   return (
     <div className='md:my-10 p-3.5'>
-    <section className='flex flex-col justify-center items-center md:pt-0 pt-15'>
+    <section className={cn('flex flex-col justify-center items-center md:pt-0' , pathname === "/map"&&'pt-15')}>
     <div className='lg:mt-13' />
       <div className='flex flex-col'>
       <div className='flex md:flex-row flex-col md:justify-between items-start lg:w-[1100px] w-screen'>
@@ -52,7 +52,7 @@ const Mapping = () => {
       
 
         <section className='md:mt-7 mt-0 flex justify-center items-center'>
-        <div className='md:w-[1100px] md:h-[500px] w-[390px] h-[250px] md:pt-0 mt-5'>
+        <div className={cn('md:w-[1100px] md:h-[500px] w-[390px] h-[250px] md:pt-0', pathname === "/map"&&'mt-5')}>
           <Map />
         </div>
         </section>
