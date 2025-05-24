@@ -34,7 +34,10 @@ const Sisul = () => {
             <div className='flex md:flex-row flex-col md:justify-between items-start lg:w-[1100px] w-screen'>
                 <div className='lg:px-0 px-3 flex flex-col h-[40px] justify-end'>
                   <div className='flex flex-row gap-2'>
-                    <div className='lg:text-start font-semibold text-center text-[20px] text-[#000000]'>루틴그라운드 개포</div>
+                     <div className='lg:px-0 flex flex-col h-[40px] justify-end'>
+                      <div className='md:text-start font-semibold text-center text-[20px] md:text-[#4a5937] text-[#000000]'>루틴그라운드 개포</div>
+                      <hr className="mt-1 h-0.5 md:bg-[#4a5937] bg-[#4a5937] border-t-0 opacity-100 w-[145px] dark:opacity-50"/>
+                  </div>
                   </div>
                 <hr className="mt-1 h-0.5 md:bg-[#7f88e8] bg-white border-t-0 opacity-100 w-[70px] dark:opacity-50"/>
              </div>
@@ -79,7 +82,7 @@ const Sisul = () => {
               <div className='md:mt-10' />
                 <div className='text-[15px] text-[#222222] block md:hidden truncate text-start'>
                  <p className="text-[15px] text-[#222222]">
-                    리뉴얼 오픈한 구룡역 도보 5분 거리 합리적인 주거공간 루틴그라운드 개포입니다.
+                    리뉴얼 오픈한 구룡역 도보 5분 거리 합리적인 <br/> 주거공간 루틴그라운드 개포입니다.
                     <br />첫 달 계약시 15만원 할인 이벤트 진행중입니다!
                   </p></div>
                 <div className='md:mt-10 mt-2' />

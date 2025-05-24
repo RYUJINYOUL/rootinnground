@@ -101,7 +101,7 @@ export default function DefaultTable({props}) {
             const classes = isLast ? "p-4" : "p-4 border-b border-blue-gray-50";
  
             return (
-              <tr key={index}>
+              <tr key={index} onClick={()=>onClickCard({ title, name, description, date, id, password })}>
                 <td className={classes}>
                   <Typography
                     variant="small"
@@ -116,7 +116,7 @@ export default function DefaultTable({props}) {
                     variant="small"
                     color="blue-gray"
                     className="font-normal truncate md:w-[500px] w-[80px] line-clamp-1"
-                    onClick={()=>onClickCard({ title, name, description, date, id, password })}
+                    // onClick={()=>onClickCard({ title, name, description, date, id, password })}
                   >
                     {title}
                   </Typography>

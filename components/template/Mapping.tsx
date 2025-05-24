@@ -10,10 +10,13 @@ import { IoWifiOutline } from "react-icons/io5";
 import { FaCircleExclamation } from "react-icons/fa6";
 import { IoIosPerson } from "react-icons/io";
 import useUIState from "@/hooks/useUIState";
+import { cn } from "@/lib/utils";
 import Map from "@/components/map"
+import { usePathname } from 'next/navigation'
 
 const Mapping = () => {
    const { push } = useRouter();
+   const pathname = usePathname()
    const { homeCategory, setHomeCategory, setHeaderImageSrc } = useUIState();
 
    const onClickCategory = (item:any ,src:any) => {
@@ -28,17 +31,18 @@ const Mapping = () => {
   };
 
   return (
-    <div className='lg:my-10 p-3.5'>
-    <section className='flex flex-col justify-center items-center'>
+    <div className='md:my-10 p-3.5'>
+    <section className='flex flex-col justify-center items-center md:pt-0 pt-15'>
     <div className='lg:mt-13' />
       <div className='flex flex-col'>
       <div className='flex md:flex-row flex-col md:justify-between items-start lg:w-[1100px] w-screen'>
           <div className='lg:px-0 px-3 flex flex-col h-[40px] justify-end'>
           <div className='lg:text-start font-semibold text-center text-[20px] md:text-[#4a5937] text-[#000000]'>오시는길</div>
-          <hr className="mt-1 h-0.5 md:bg-[#4a5937] bg-white border-t-0 opacity-100 w-[70px] dark:opacity-50"/>
+          <hr className="mt-1 h-0.5 bg-[#4a5937] border-t-0 opacity-100 w-[70px] dark:opacity-50"/>
        </div>
-       <div className='flex flex-col md:h-[40px] h-[20px] justify-end'>
-          <div className='lg:text-end md:block hidden text-center text-[14px]' onClick={() => {onClickCategory("오시는길" ,"/map")}}>더보기 &nbsp;&gt;</div>
+       <div className={cn('flex flex-col md:h-[40px] h-[20px] justify-end', pathname === "/map"&&'hidden')}>
+          <div className={cn('lg:text-end md:block hidden text-center text-[14px]', pathname === "/map"&&'hidden')}
+          onClick={() => {onClickCategory("오시는길" ,"/map")}}>더보기 &nbsp;&gt;</div>
           <hr className="mt-1 h-0.5 hidden md:block border-t-0 bg-neutral-200 opacity-100 dark:opacity-50 w-[1030px]"/>
        </div>
        </div>
@@ -48,7 +52,7 @@ const Mapping = () => {
       
 
         <section className='md:mt-7 mt-0 flex justify-center items-center'>
-        <div className='md:w-[1100px] md:h-[500px] w-[390px] h-[250px]'>
+        <div className='md:w-[1100px] md:h-[500px] w-[390px] h-[250px] md:pt-0 mt-5'>
           <Map />
         </div>
         </section>
@@ -193,7 +197,7 @@ const Mapping = () => {
       </div>  
      </section>  
 
-     <div className='flex flex-col md:w-[530px] w-full'>
+     <div className={cn('flex flex-col md:w-[530px] w-full', pathname === "/map"&&'hidden')}>
           <div className='md:hidden flex flex-col h-[40px] justify-end'>
           <hr className="mt-1 h-0.5 md:hidden block border-t-0 bg-neutral-200 opacity-100 dark:opacity-50 w-full"/>
           <div className='md:mt-3 mt-3' />

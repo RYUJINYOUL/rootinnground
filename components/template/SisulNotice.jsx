@@ -31,8 +31,10 @@ const SisulNotice = () => {
             <div className='flex flex-col'>
             <div className='flex md:flex-row flex-col md:justify-between items-start lg:w-[1100px] w-screen'>
                 <div className='lg:px-0 px-3 flex flex-col h-[40px] justify-end'>
-                <div className='lg:text-start font-semibold text-center text-[20px] md:text-[#4a5937] text-[#000000]'>시설안내</div>
-                <hr className="mt-1 h-0.5 md:bg-[#4a5937] bg-white border-t-0 opacity-100 w-[70px] dark:opacity-50"/>
+                 <div className='lg:px-0 pb-1 flex flex-col h-[40px] justify-end'>
+                      <div className='md:text-start font-semibold text-center text-[20px] md:text-[#4a5937] text-[#000000]'>시설안내</div>
+                      <hr className="mt-1 h-0.5 md:bg-[#4a5937] bg-[#4a5937] border-t-0 opacity-100 w-[70px] dark:opacity-50"/>
+                  </div>
              </div>
              <div className='flex flex-col md:h-[40px] h-[10px] justify-end'>
                 <div className='lg:text-end md:block hidden text-center text-[14px]' onClick={() => {onClickCategory("시설안내" ,"/dastory/pro")}}>더보기 &nbsp;&gt;</div>

@@ -12,7 +12,7 @@ function page (){
              <div className='flex md:flex-row flex-col md:justify-between items-start lg:w-[1100px] w-screen'>
           <div className='lg:px-0 px-3 flex flex-col h-[40px] justify-end'>
           <div className='lg:text-start font-semibold text-center text-[20px] text-[#4a5937]'>방-Type C</div>
-          <hr className="mt-1 h-0.5 md:bg-[#4a5937] bg-white border-t-0 bg-neutral-700 opacity-100 w-[100px] dark:opacity-50"/>
+          <hr className="mt-1 h-0.5 md:bg-[#4a5937] border-t-0 bg-neutral-700 opacity-100 w-[100px] dark:opacity-50"/>
        </div>
        <div className='flex flex-col md:h-[40px] h-[10px] justify-end'>
           <div className='lg:text-end md:block hidden text-center text-[14px]'></div>
