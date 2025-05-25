@@ -32,26 +32,26 @@ const FabButton = () => {
       {/* <div className="gap-3"> */}
         {openSubMenu && (
           <ul>
-           <a href="tel:010-3896-0696">
-           <button className="bg-[#7f88e8] flex items-center justify-center w-13 h-13 xs:w-11 xs:h-11 text-white rounded-full shadow-lg transition-transform hover:scale-110">
+           <a href="tel:02-571-5335">
+           <button className="bg-[#4a5937] flex items-center justify-center w-13 h-13 xs:w-11 xs:h-11 text-white rounded-full shadow-lg transition-transform hover:scale-110">
             <CiPhone className="w-7 h-7" />
            </button>
           </a>
 
-          <a href="sms:010-3896-0696">
+          {/* <a href="sms:010-3896-0696">
            <button className="bg-[#7f88e8] mt-3 flex items-center justify-center w-13 h-13 xs:w-11 xs:h-11 text-white rounded-full shadow-lg transition-transform hover:scale-110">
             <FaRegEnvelope className="w-6 h-6" />
            </button>
-          </a>
+          </a> */}
 
-           <a href="sms:010-3896-0696">
+           {/* <a href="sms:010-3896-0696">
            <button className="bg-[#7f88e8] mt-3 flex items-center justify-center w-13 h-13 xs:w-11 xs:h-11 text-white rounded-full shadow-lg transition-transform hover:scale-110">
             <IoPersonOutline className="w-6 h-6" />
            </button>
-          </a>
+          </a> */}
   
 
-          <button className="bg-[#7f88e8] mt-3 flex items-center justify-center w-13 h-13 xs:w-11 xs:h-11 text-white rounded-full shadow-lg transition-transform hover:scale-110" 
+          <button className="bg-[#4a5937] mt-3 flex items-center justify-center w-13 h-13 xs:w-11 xs:h-11 text-white rounded-full shadow-lg transition-transform hover:scale-110" 
           onClick={() => {onClickCategory("오시는 길" ,"/map")}}>
             <LuMapPin className="w-6 h-6" />
            </button>
@@ -83,7 +83,7 @@ const FabButton = () => {
           </ul>
         )}
       {/* </div> */}
-      <button className="bg-[#7f88e8] w-13 h-13 xs:w-11 xs:h-11 text-white rounded-full shadow-lg transition-transform hover:scale-110" onClick={shownSubMenuHandler}>
+      <button className="bg-[#4a5937] w-13 h-13 xs:w-11 xs:h-11 text-white rounded-full shadow-lg transition-transform hover:scale-110" onClick={shownSubMenuHandler}>
         {openSubMenu ? <h1>{"x"}</h1> : <h1>{"+"}</h1>}
       </button>
 

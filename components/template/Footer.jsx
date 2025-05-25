@@ -26,33 +26,17 @@ return (
         
              <ul className="list_info flex flex-col items-center">
                  <li className='text-[#000000] text-[15px] font-semibold'>
-                   <span className="item_description">강대리빙텔</span>
-                 </li>
-                 <li className='text-[#959595] text-[13px]'>
-                   <span className="item_title">대표자 : </span>
-                   <span className="item_description"> 전두석</span>
+                   <span className="item_description">루틴그라운드 개포</span>
                  </li>
                  <li className='text-[#959595] text-[13px]'>
                    <span className="item_title">전화번호 : </span>
                    <span className="item_description"><a href="tel:010-3896-0696" className="_callTel">
-                      033-251-4900
+                      02-571-5335
                     </a></span>
-                 </li>
-                 <li className='text-[#959595] text-[13px]'>
-                   <span className="item_title">이메일 : </span>
-                   <span className="item_description">jds90000@naver.com</span>
                  </li>
                 <li className='text-[#959595] text-[13px]'>
                    <span className="item_title">주소 : </span>
-                   <span className="item_description">강원도 춘천시 공지로280번길 22 (효자동 174-1)</span>
-                 </li>
-                <li className='text-[#959595] text-[13px]'>
-                   <span className="item_title">사업자정보 : </span>
-                   <span className="item_description">221-81-44720</span>
-                 </li>
-                 <li className='text-[#959595] text-[13px]'>
-                   <span className="item_title">기타 : </span>
-                   <span className="item_description">H.P 010-8799-5999</span>
+                   <span className="item_description">서울특별시 강남구 선릉로12길 5 2층</span>
                  </li>
                  <div className='mt-5'/>  
                  
