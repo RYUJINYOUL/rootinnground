@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
+import { useDispatch, useSelector } from 'react-redux';
 import { getFirestore, collection, where, setDoc, onSnapshot, query, limit} from "firebase/firestore";
 import app from '../../firebase';
 import moment from 'moment';
@@ -9,6 +10,7 @@ import useUIState from "@/hooks/useUIState";
 const Notice = () => {
   const db2 = getFirestore(app);
   const [message, setMessages] = useState([]);
+  const { currentUser } = useSelector(state => state.user)
   const { push } = useRouter();
   const timeFromNow = timestamp => moment(timestamp).format('YYYY.MM.DD');
   const { homeCategory, setHomeCategory, setHeaderImageSrc } = useUIState();
@@ -49,9 +51,22 @@ const Notice = () => {
   };
 
 
-  const onClickCard = ({ title, name, description, date }) => {
-    onClickCategory("입실문의" ,"/ta")
-    push(`/ta/playlist?title=${title}&name=${name}&des=${description}&date=${date}`);
+  const onClickCard = ({ title, name, description, date, id, password }) => {
+      var enteredName=""
+      if (currentUser.uid === "aRWcjBBQoHXE4qtZDJWzZ5P8hBE2" || password === "") {
+        push(`/ta/playlist?id=${id}&title=${title}&name=${name}&des=${description}&date=${date}`)
+      } else if (enteredName = prompt('비밀번호를 입력해주세요')) {
+           if(enteredName === "12"){
+               alert("방문해주셔서 감사합니다.")
+              push(`/ta/playlist?id=${id}&title=${title}&name=${name}&des=${description}&date=${date}`)
+           } else {
+          alert("비밀번호가    fdfs틀립니다.")
+          push("/ta");
+           }      
+      } else {
+          alert("비밀번호가 틀립니다.")
+          push("/ta");
+      }
     // push(`/test/?name=${id}collection=${collection}`);
   };
 
