@@ -31,7 +31,7 @@ const Gallery3 = () => {
           // width={530}
           // height={353}
           fill
-          src={"/Image/mosaIBv3Bl.jpeg"}
+          src={"/Image/3.jpeg"}
         /> 
         <div className='md:hidden absolute md:h-[500px] h-[430px] top-0 bg-black md:opacity-40 opacity-60 w-full'></div>
 
@@ -53,17 +53,17 @@ const Gallery3 = () => {
 
            <div className="relative top-3/10 pt-20 flex flex-row w-full items-center justify-center">
               <div className="absolute md:hidden flex top-3/10 flex-row">
-                  <div className="w-3/5 h-[230px] top-3/10 -ml-2.5">
+                  <div className="w-4/5 h-[230px] top-3/10 -ml-0 pr-38">
                 <img
-                  src="/Image/mosaIBv3Bl.jpeg" // Replace with actual image path
-                  alt="미니추레라"
+                  src="/Image/9.jpeg" // Replace with actual image path
+                  alt=""
                   className="h-[230px] object-cover"
                 />
               </div>
               </div>
-              <div className="pr-">
+              <div className="pr-38">
               <div className="-mt-3 m-5 md:hidden absolute flex flex-col items-center justify-center gap-3 
-                 w-2/5 h-[252px] top-3/10 bg-[#4a5937]">
+                 w-3/5 h-[252px] top-3/10 bg-[#4a5937]">
                 <div>
                   <h2 className="text-[21px] text-[#FFFFFF] font-bold">루틴그라운드</h2>
                   <h3 className="text-[21px] text-[#FFFFFF] font-bold mb-2">개포</h3>

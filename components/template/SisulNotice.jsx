@@ -54,7 +54,7 @@ const SisulNotice = () => {
                 className="w-[540px] h-[360px] rounded-md"
                 width={540}
                 height={360}
-                src={"/Image/mosa78lcjv.jpeg"}
+                src={"/Image/2.jpeg"}
               />
                 <div className='mt-3' />
                 <div className='md:text-[20px] md:block hidden text-[#4a5937] font-semibold text-[20px] text-start'>제공 시설_개인공간</div>
@@ -88,7 +88,7 @@ const SisulNotice = () => {
                     className="w-[100px] h-[100px] rounded-md"
                     width={100}
                     height={100}
-                    src={"/Image/mosa78lcjv.jpeg"}
+                    src={"/Image/2.jpeg"}
                   />
                     <div>
                       <div className='mt-3' />

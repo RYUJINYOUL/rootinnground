@@ -63,7 +63,7 @@ const Sisul = () => {
                   className="w-[120px] h-[75px] rounded-md"
                   width={120}
                   height={75}
-                  src={"/Image/mosa78lcjv.jpeg"}
+                  src={"/Image/1.jpeg"}
                 />  
       
                 <Image

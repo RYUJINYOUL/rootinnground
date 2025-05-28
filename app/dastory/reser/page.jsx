@@ -26,7 +26,7 @@ function page (){
             className="object-contain"
             width={1100}
             height={800}
-            src={"/Image/mosatY8JnC.jpeg"}
+            src={"/Image/1.jpeg"}
           />
 
          <div className='mt-5' />
@@ -35,7 +35,7 @@ function page (){
             className="object-contain"
             width={1100}
             height={800}
-            src={"/Image/mosaemjEGm.jpeg"}
+            src={"/Image/5.jpeg"}
           />
 
       </section>
