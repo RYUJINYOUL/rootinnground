@@ -74,12 +74,12 @@ const Gallery3 = () => {
                 </div>
                 <div className="flex gap-2 items-start">
                   <button className="bg-[#354027] text-white p-2">
-                   <a href="tel:0507-1315-0673">
+                   <a href="tel:010-4317-4838">
                     <Phone className="w-4 h-4" />
                     </a>
                   </button>
                   <button className="bg-[#354027] text-white p-2">
-                    <a href="sms:0507-1315-0673">
+                    <a href="sms:010-4317-4838">
                     <MessageSquare className="w-4 h-4" />
                     </a>
                   </button>
