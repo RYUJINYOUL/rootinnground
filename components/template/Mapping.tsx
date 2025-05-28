@@ -72,11 +72,11 @@ const Mapping = () => {
         <div className='flex flex-row gap-2'>
           <div className='flex flex-row gap-1.5 lg:text-start text-center text-[15px] p-2 bg-[#4a5937] text-white'>
           <HiArrowTurnRightUp className='text-[20px]'/>
-          <div className='text-white' onClick={() => {window.open("https://map.naver.com/p/directions/-/14219435.142439893,4560752.362414806,%EA%B0%95%EB%8C%80%EB%A6%AC%EB%B9%99%ED%85%94,,/-/transit?c=15.00,0,0,0,dh")}}>길찾기</div>
+          <div className='text-white' onClick={() => {window.open("https://map.naver.com/p/directions/-/14144297.547440428,4506735.373226055,%EB%A3%A8%ED%8B%B4%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C,,/-/transit?c=15.00,0,0,0,dh")}}>길찾기</div>
           </div>
           <div className='flex flex-row gap-1.5 lg:text-start text-center text-[15px] p-2 bg-[#4a5937] text-white'>
           <CiMap className='text-[20px]'/>
-          <div className='text-white' onClick={() => {window.open("https://map.naver.com/p?title=%EA%B0%95%EB%8C%80%EB%A6%AC%EB%B9%99%ED%85%94&lng=127.7353592&lat=37.8676949&zoom=21&type=0&c=15.00,0,0,0,dh")}}>지도에서 보기</div>
+          <div className='text-white' onClick={() => {window.open("https://map.naver.com/p?title=%EB%A3%A8%ED%8B%B4%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C&lng=127.0603867&lat=37.4836349&zoom=15&type=0&c=15.00,0,0,0,dh")}}>지도에서 보기</div>
           </div>
         </div>  
       </div>
@@ -145,11 +145,11 @@ const Mapping = () => {
     <div className='flex flex-row gap-2'>
           <div className='flex rounded-md flex-row gap-1.5 lg:text-start text-center text-[12px] p-2 bg-[#4a5937] text-white'>
           <HiArrowTurnRightUp className='text-[15px]'/>
-          <div className='text-white' onClick={() => {window.open("https://map.naver.com/p/directions/-/14219435.142439893,4560752.362414806,%EA%B0%95%EB%8C%80%EB%A6%AC%EB%B9%99%ED%85%94,,/-/transit?c=15.00,0,0,0,dh")}}>길찾기</div>
+          <div className='text-white' onClick={() => {window.open("https://map.naver.com/p/directions/-/14144297.547440428,4506735.373226055,%EB%A3%A8%ED%8B%B4%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C,,/-/transit?c=15.00,0,0,0,dh")}}>길찾기</div>
           </div>
           <div className='flex flex-row gap-1.5 rounded-md lg:text-start text-center text-[12px] p-2 bg-[#4a5937] text-white'>
           <CiMap className='text-[15px]'/>
-          <div className='text-white' onClick={() => {window.open("https://map.naver.com/p?title=%EA%B0%95%EB%8C%80%EB%A6%AC%EB%B9%99%ED%85%94&lng=127.7353592&lat=37.8676949&zoom=21&type=0&c=15.00,0,0,0,dh")}}>지도에서 보기</div>
+          <div className='text-white' onClick={() => {window.open("https://map.naver.com/p?title=%EB%A3%A8%ED%8B%B4%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C&lng=127.0603867&lat=37.4836349&zoom=15&type=0&c=15.00,0,0,0,dh")}}>지도에서 보기</div>
           </div>
         </div>  
     </section>
@@ -157,37 +157,28 @@ const Mapping = () => {
     <section className='md:hidden flex justify-center items-center'>
     <div className='flex md:p-0 p-3 flex-col w-full'>
       <div className='md:mt-10 mt-2' />
-      <div className='md:text-[15px] text-[#222] font-bold text-start'>강대리빙텔</div>
+      <div className='md:text-[15px] text-[#222] font-bold text-start'>루틴그라운드</div>
         <div className='mt-1' />
-        <div className='text-[15px] text-[#888] text-start'>강원도 춘천시 효자동 174-1 (공지로280번길 22)</div>
+        <div className='text-[15px] text-[#888] text-start'>서울특별시 강남구 선릉로12길 5 2층</div>
         <div className='mt-5' />
          <div className='md:text-[15px] text-[#222] font-bold text-start'>전화번호</div>
         <div className='mt-1' />
-        <div className='text-[15px] text-[#888] text-start'><a href="tel:010-8799-5999" className="_callTel">
-            010-8799-5999
-          </a></div>
-           <div className='text-[15px] text-[#888] text-start'><a href="tel:033-251-4900" className="_callTel">
-            033-251-4900
+        <div className='text-[15px] text-[#888] text-start'><a href="tel:0507-1388-4838" className="_callTel">
+            0507-1388-4838
           </a></div>
         <div className='mt-5' />
       
-         <div className='md:text-[15px] text-[#222] font-bold text-start'>이용안내</div>
+         <div className='md:text-[15px] text-[#222] font-bold text-start'>오시는길</div>
         <div className='mt-1' />
         <div className='text-[15px] text-start'>
 
-          <div className="flex flex-col">
-            {" "}
-            <span className="flex flex-row gap-8">
-             
-              <span className="flex flex-col gap-2">
-                  <AiOutlineCar className='text-[25px] text-[#888]'/>
-                  <span className="sub_title text-[12px] text-[#888]">주차</span>
-              </span>
-             <span className="flex flex-col items-center justify-center gap-2">
-                  <IoWifiOutline className='text-[25px] text-[#888]'/>
-                  <span className="sub_title text-[12px] text-[#888]">무선인터넷</span>
-              </span>
-            </span>{" "}
+         <div className='lg:text-start text-center text-[15px]'>
+           <span className="text">
+              1. 구룡역 5번출구로 나와 개포고교 교차로까지 쭉 직진해주세요. <br/>2.
+              개포고등학교를 왼쪽에 두고 좌회전하여 쭉 직진하세요. <br/>3. 파리바게트와
+              세븐일레븐 사이 골목으로 들어오세요. <br/>4. 식당 '리애'를 왼쪽에 두고
+              좌회전하세요. <br/>5. 카페 '오로미아' 2층이 루틴그라운드 개포 입니다.
+            </span>
           </div>
           
         </div>

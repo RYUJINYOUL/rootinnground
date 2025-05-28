@@ -40,9 +40,9 @@ return (
                  </li>
                  <div className='mt-5'/>  
                  
-                 <a href='https://m.search.naver.com/search.naver?query=%EA%B0%95%EB%8C%80%EB%A6%AC%EB%B9%99%ED%85%94+%EA%B0%95%EB%8C%80%EA%B3%A0%EC%8B%9C%ED%85%94+%EA%B3%A0%EC%8B%9C%EC%9B%90%40' target='_blank'>
+                 <a href='https://m.search.naver.com/search.naver?query=%EB%A3%A8%ED%8B%B4%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C+%EA%B0%9C%ED%8F%AC%40' target='_blank'>
                  <li className='text-[#959595] p-2 text-[13px] border-1 border-[#9d9d9d]'>
-                   <span className="item_title">강대리빙텔 강대고시텔 고시원@ </span>
+                   <span className="item_title">루틴그라운드 개포@ </span>
                  </li>
                  </a>
                </ul>

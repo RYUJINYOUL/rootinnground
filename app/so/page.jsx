@@ -71,9 +71,9 @@ function page (){
                     <div className='text-[#4a5937] text-[20px]'>방 가격이 어떻게 되나요?</div>
                     <div className='text-[#333333] text-[15px]'>루틴그라운드의 방은 총 세 가지 타입으로 되어있으며, 각 타입과 가격은 다음과 같습니다. </div>
                          <div className='md:mt-10 mt-5' />
-                    <div className='text-[#333333] text-[15px]'>A Type. 큰 외창방 (35만원) </div>
-                    <div className='text-[#333333] text-[15px]'>B Type. 외창방 (30만원) </div>
-                    <div className='text-[#333333] text-[15px]'>C Type. 내창방 (28만원)</div>
+                    <div className='text-[#333333] text-[15px]'>A Type. 큰 외창방 (38만원) </div>
+                    <div className='text-[#333333] text-[15px]'>B Type. 외창방 (35만원) </div>
+                    <div className='text-[#333333] text-[15px]'>C Type. 내창방 (32만원)</div>
                   </div>
                   
                

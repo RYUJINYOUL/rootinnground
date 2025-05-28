@@ -102,26 +102,26 @@ const slideRight = () => {
   //   slider.scroll(200, 400)
   // }
   if (headerImageSrc === "/ta") {
-    slider.scroll(200, 400)
+    slider.scrollTo(200, 400)
   }
   if (headerImageSrc === "/so") {
-    slider.scroll(250, 500)
+    slider.scrollTo(250, 500)
   }
   if (headerImageSrc === "/map") {
-    slider.scroll(300, 600)
+    slider.scrollTo(300, 600)
   }
 
   if (pathname === "/dastory/reser") {
-    slider2.scroll(0, 100)
+    slider2.scrollTo(0, 100)
   }
   if (pathname === "/dastory/jun") {
-    slider2.scroll(50, 100)
+    slider2.scrollTo(50, 100)
   }
   if (pathname === "/dastory/gyu") {
-     slider2.scroll(100, 200)
+     slider2.scrollTo(100, 200)
   }
   if (pathname === "/dastory/gong") {
-     slider2.scroll(150, 400)
+     slider2.scrollTo(150, 400)
   }
 
 };
