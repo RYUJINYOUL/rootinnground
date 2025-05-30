@@ -18,10 +18,10 @@ return (
    
           <Image
              alt="logo"
-             className="object-cover rounded-full"
-             width={70}
-             height={70}
-             src={"/Image/mainmiddle.jpeg"}
+             className="w-[90px] h-[90px] object-cover rounded-4xl"
+             width={90}
+             height={90}
+             src={"/Image/1.jpeg"}
            />  
         
              <ul className="list_info flex flex-col items-center">

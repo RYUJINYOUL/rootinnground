@@ -95,8 +95,8 @@ const Mapping = () => {
           <HiPhone className='text-[20px] text-gray-400'/>
           <div className=''>전화번호</div>
           </div>
-           <div className='text-[15px] text-[#888] text-start'><a href="tel:0507-1388-4838" className="_callTel">
-            0507-1388-4838
+           <div className='text-[15px] text-[#888] text-start'><a href="tel:010-4317-4838" className="_callTel">
+            010-4317-4838
           </a></div>
           <div className='mt-2' />
       
@@ -163,8 +163,8 @@ const Mapping = () => {
         <div className='mt-5' />
          <div className='md:text-[15px] text-[#222] font-bold text-start'>전화번호</div>
         <div className='mt-1' />
-        <div className='text-[15px] text-[#888] text-start'><a href="tel:0507-1388-4838" className="_callTel">
-            0507-1388-4838
+        <div className='text-[15px] text-[#888] text-start'><a href="tel:010-4317-4838" className="_callTel">
+            010-4317-4838
           </a></div>
         <div className='mt-5' />
       
@@ -172,7 +172,7 @@ const Mapping = () => {
         <div className='mt-1' />
         <div className='text-[15px] text-start'>
 
-         <div className='lg:text-start text-center text-[15px]'>
+         <div className='text-start text-[#888] text-[15px]'>
            <span className="text">
               1. 구룡역 5번출구로 나와 개포고교 교차로까지 쭉 직진해주세요. <br/>2.
               개포고등학교를 왼쪽에 두고 좌회전하여 쭉 직진하세요. <br/>3. 파리바게트와

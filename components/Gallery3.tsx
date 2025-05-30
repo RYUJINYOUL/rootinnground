@@ -37,7 +37,7 @@ const Gallery3 = () => {
 
          <div className="absolute hidden md:block md:top-1/2 top-3/5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-4">
               <img
-                src="/Image/mosarbxJpn.jpeg"
+                src="/Image/1.jpeg"
                 alt="고시원 썸네일"
                 className="w-[90px] h-[90px] md:w-[120px] md:h-[120px] rounded-full mx-auto mb-4"
               />
